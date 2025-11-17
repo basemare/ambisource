@@ -18,7 +18,7 @@ This repository contains a modular CLI (`ambisource.m`) and all detection and vi
 matlab -nodesktop
 ```
 
-This opens MATLAB without GUI, ideal for command-line workflows and batch processing.
+This opens MATLAB without GUI, ideal for command-line workflow.
 
 ---
 
@@ -42,13 +42,6 @@ Clone the repository from GitHub:
 git clone https://github.com/basemare/ambisource.git
 ```
 
-Then add the folder to your MATLAB path:
-
-```matlab
-addpath(genpath('ambisource'));
-savepath;
-```
-
 ---
 
 # Detection Tools
@@ -67,10 +60,10 @@ Creates:
 out/directions.json
 ```
 
-**PNG generation (time-range 3m25s to 3m35s):**
+**PNG generation (time-range 1m25s to 1m35s):**
 
 ```bash
-ambisource detect single sphere example_rec.wav 48000 out pngs res=1 fps=30 t0=3:25 t1=3:35
+ambisource detect single sphere example_rec.wav 48000 out pngs res=1 fps=30 t0=1:25 t1=1:35
 ```
 
 Creates:
@@ -91,7 +84,7 @@ ambisource detect multiple sphere
 
 ---
 
-### 3) Single-Source Localization in Space (Two FOA Spheres)
+### 3) Single-Source Localization in Space
 
 (Not implemented yet)
 
